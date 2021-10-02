@@ -26,15 +26,15 @@ variable "assume_role" {
 
 variable "cidr_block" {
   type        = string
-  description = "Nome do projeto que está sendo criado, utilizado para realizar os TAGs em todos os recursos"
+  description = "VPC Network Block"
 }
 
 variable "azs" {
   type        = list(any)
-  description = "Nome do projeto que está sendo criado, utilizado para realizar os TAGs em todos os recursos"
+  description = "AZs list to be used"
 }
 
-variable "private_subnets" {
+variable "public_subnets" {
   type        = list(any)
-  description = "Nome do projeto que está sendo criado, utilizado para realizar os TAGs em todos os recursos"
+  description = "List of the public subnets"
 }
